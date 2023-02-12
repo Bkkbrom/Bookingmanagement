@@ -1,15 +1,1 @@
-
-
-npm install bcrypt-promise
-npm install koa
-npm install koa-router
-npm install koa-views
-npm install koa-static
-npm install koa-bodyparser
-npm install koa-body
-npm install koa-session
-npm install sqlite-async
-npm install fs-extra
-npm install mime-types
-npm install koa-hbs-renderer
-npm install bcrypt
+This project is an online managment system for Domestic repair shop. A large piece of electrical equipment used in the home, especially in the kitchen. Customer uplaod details of there equipment that needs repairing, and once the job has been upload to the system, it awaits for an technician to pick the job. Technicians can pick the job from the list of available jobs, and once the job has been picked, automated email to be sent out to customer notifying them of the update. 
