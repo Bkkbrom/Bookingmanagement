@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <meta name="description" content="form to add new books">
+    <meta name="author" content="Mark Tyers">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <ul class="ul" class="centerText">
+        <li class="li"><a href="/">Home</a></li>
+        <li style="display: {{Ashow}}"><a href="AddJob">Add Job</a></li>
+        <li><a class="active" href="JobStatus">Status</a></li>
+        <li style="display: {{show}}"> <a href="/JobList">Select Job</a> </li>
+        <li  style="float:right" > <a href="/logout">Logout</a></li>
+    </ul>
+
+    <form action="/JobStatus" method="post">
+        <p>This is the CustomerID</p>
+         
+         <table >
+             <tr>
+                <th>Job ID</th>
+                <th>Appliance Type</th>
+                <th>Appliance Age</th>
+                <th>Manufacturer</th>
+                <th>FaultDescription</th>
+                <th>Status</th>
+            </tr>
+         </table>
+        {{#each JobStatus }}
+        <table class="ex2" >
+            <tr>
+                <td >{{this.JobID}}</td>
+                <td>{{this.ApplianceType}}</td>
+                <td>{{this.ApplianceAge}}</td>
+                <td>{{this.Manufacturer}}</td>
+                <td>{{this.FaultDescription}}</td>
+                <td >{{this.Status}}</td>
+            </tr>
+           
+        </table>
+        {{/each}}
+        <img src="\Users\brhanek\Documents\340CT-Brhanek\public\avatars\avatar.png" width="460" height="340">
+    </form>
+</body>
+
+</html>

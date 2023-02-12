@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Create an Account</title>
+	<meta name="description" content="form to add new books">
+	<meta name="author" content="Mark Tyers">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<h1>Create an Account</h1>
+	<div class="centerText">
+		<form action="/register" enctype="multipart/form-data" method="post">
+			<p>Username: <input type="text" name="Username" placeholder="Create a user name (no spaces)" value=""></p>
+			<p>FName: <input type="text" name="FName" placeholder="your First Name (no spaces)" value=""></p>
+			<p>LName: <input type="text" name="LName" placeholder="your Last Name username (no spaces)" value=""></p>
+			<p>DateOfBirth: <input type="text" name="DateOfBirth" placeholder="your Date of birth(no spaces)" value="">
+			</p>
+			<p>Email: <input type="text" name="Email" placeholder="your email (no spaces)" value=""></p>
+			<p>Password: <input type="password" name="Password" placeholder="your chosen password" value=""></p>
+			<p>Profile Picture: <input type="file" name="avatar"></p>
+			<p><input type="submit" value="Create"></p>
+		</form>
+	</div>
+</body>
+
+</html>

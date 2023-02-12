@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Home Page</title>
+	<meta name="description" content="form to add new books">
+	<meta name="author" content="Mark Tyers">
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<ul class="ul" class="centerText">
+		<li class="li"><a href="/">Home</a></li>
+		<li style="display: {{AshowA}}"><a class="active" href="#AddJob">Add Job</a></li>
+		<li><a href="JobStatus">Status</a></li>
+		<li style="display: {{showA}}"> <a href="/JobList">Select Job</a> </li>
+		<li  style="float:right" > <a href="/logout">Logout</a></li>
+	</ul>
+
+	{{#if msg}}
+	<p class="msg">{{msg}}</p>
+	{{/if}}
+
+	<form action="/AddJob" method="post">
+		<p>CustomerID: <input type="text" name="CustomerID" placeholder=""></p>
+		<p> Appliance Type:
+			<select name="ApplianceType">
+				<option value=""> </option>
+				<option value="DVD Player">DVD Player</option>
+				<option value="Laptop">Laptop</option>
+				<option value="Phone">Phone</option>
+				<option value="TV">TV</option>
+				<option value="Digital Camera">Digital Camera</option>
+				<option value="Dishwasher">Dishwasher</option>
+			</select>
+		</p>
+
+		<p> Appliance Age:
+			<select name="ApplianceAge">
+				<option value=""> </option>
+				<option value="1"> 1 Year</option>
+				<option value="2">2 Year</option>
+				<option value="3">3 Year</option>
+				<option value="4">4 Year</option>
+				<option value="5">5 Year</option>
+				<option value="6">6 Year</option>
+			</select>
+		</p>
+
+			<p> Manufacturer:
+			<select name = "Manufacturer">
+			<option value=""> </option>
+			<option value="Samsung">Samsung</option>
+			<option value="LG">LG</option>
+			<option value="Apple">Apple</option>
+			<option value="Bosch">Bosch</option>
+			<option value="Jenn-Air">Jenn-Air</option>
+			<option value="Hotpoint">Hotpoint</option>
+			<option value="Nokia">Nokia</option>
+		</select> 
+		</p>
+
+		<p>FaultDescription: <input type="text" name="FaultDescription" placeholder="" value=""></p>
+		<p><input type="submit" value="AddJob"></p>
+	</form>
+
+</body>
+
+</html>

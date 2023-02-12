@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .msg {
+    border: 1px solid red;
+    font-weight: bold;
+    color: red;
+    padding: 1em;
+  }
+
+  p {
+    font-family: Verdana;
+    font-size: 20px;
+  }
+
+  .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+
+  .centerText {
+    text-align: center;
+    padding: 70px 0;
+  }
+  
+  ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  table.ex2:hover, a.ex2:active {font-size: 150%; background-color: lightgreen;}
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+  table {
+    width:70%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    table-layout: fixed;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th{
+    padding: 15px;
+    text-align: left;
+  }
+  td{
+    padding: 15px;
+    text-align: center;
+
+  }
+
+  table#t01 th {
+    background-color: black;
+   
+  }
+
+  Status1{
+    background-color: orangered;
+  }
+  
